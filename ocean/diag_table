@@ -42,6 +42,9 @@ ACCESS-OM2-025
 "ocean_model","temp","temp",            "ocean_month","all",.true.,"none",2
 "ocean_model","dzt","dzt",              "ocean_month","all",.true.,"none",2
 "ocean_model","ty_trans","ty_trans",    "ocean_month","all",.true.,"none",2
+"ocean_model","u","u",                  "ocean_month","all",.true.,"none",2
+"ocean_model","v","v",                  "ocean_month","all",.true.,"none",2
+"ocean_model","wt","wt",                "ocean_month","all",.true.,"none",2
 
 "ocean_model","temp","temp",            "ocean_daily","all",.true.,"none",2
 "ocean_model","dzt","dzt",              "ocean_daily","all",.true.,"none",2
@@ -80,11 +83,16 @@ ACCESS-OM2-025
 "ocean_model","sw_heat_on_nrho","sw_heat_on_nrho", "ocean_wmass_daily","all",.true.,"none",1
 "ocean_model","frazil_on_nrho","frazil_on_nrho", "ocean_wmass_daily","all",.true.,"none",1
 "ocean_model","sfc_hflux_pme_on_nrho","sfc_hflux_pme_on_nrho", "ocean_wmass_daily","all",.true.,"none",1
+"ocean_model","temp_rivermix_on_nrho","temp_rivermix_on_nrho","ocean_wmass_daily","all",.true.,"none",1
+"ocean_model","temp_eta_smooth_on_nrho","temp_eta_smooth_on_nrho","ocean_wmass_daily","all",.true.,"none",1
 
 # # To close volume budget, also need P-E+R T-binned:
 "ocean_model","mass_pmepr_on_nrho","mass_pmepr_on_nrho","ocean_wmass","all",.true.,"none",1
 
 # # # Eulerian heat budget diagnostics (for check)
+"ocean_model","temp_submeso","temp_submeso"                 ,"ocean_heat","all",.true.,"none",1
+"ocean_model","temp_tendency","temp_tendency"               ,"ocean_heat","all",.true.,"none",1
+"ocean_model","temp_advection","temp_advection"             ,"ocean_heat","all",.true.,"none",1
 "ocean_model","temp_vdiffuse_diff_cbt","temp_vdiffuse_diff_cbt", "ocean_heat","all",.true.,"none",1
 "ocean_model","temp_nonlocal_KPP","temp_nonlocal_KPP", "ocean_heat","all",.true.,"none",1
 "ocean_model","sw_heat","sw_heat", "ocean_heat","all",.true.,"none",1
@@ -94,12 +102,17 @@ ACCESS-OM2-025
 "ocean_model","temp_eta_smooth","temp_eta_smooth","ocean_heat","all",.true.,"none",1
 "ocean_model","temp_rivermix","temp_rivermix","ocean_heat","all",.true.,"none",1
 
+"ocean_model","temp_submeso","temp_submeso","ocean_heat_daily","all",.true.,"none",1
+"ocean_model","temp_tendency","temp_tendency","ocean_heat_daily","all",.true.,"none",1
+"ocean_model","temp_advection","temp_advection","ocean_heat_daily","all",.true.,"none",1
 "ocean_model","temp_vdiffuse_diff_cbt","temp_vdiffuse_diff_cbt", "ocean_heat_daily","all",.true.,"none",1
 "ocean_model","temp_nonlocal_KPP","temp_nonlocal_KPP", "ocean_heat_daily","all",.true.,"none",1
 "ocean_model","sw_heat","sw_heat", "ocean_heat_daily","all",.true.,"none",1
 "ocean_model","temp_vdiffuse_sbc","temp_vdiffuse_sbc","ocean_heat_daily","all",.true.,"none",1
 "ocean_model","sfc_hflux_pme","sfc_hflux_pme","ocean_heat_daily","all",.true.,"none",1
 "ocean_model","frazil_3d","frazil_3d","ocean_heat_daily","all",.true.,"none",1
+"ocean_model","temp_eta_smooth","temp_eta_smooth","ocean_heat_daily","all",.true.,"none",1
+"ocean_model","temp_rivermix","temp_rivermix","ocean_heat_daily","all",.true.,"none",1
 
 # # 2d fields - monthly output
 "ocean_model","eta_t","eta_t",                     "ocean_month","all",.true.,"none",2
