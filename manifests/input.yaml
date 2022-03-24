@@ -211,6 +211,11 @@ work/ocean/INPUT/ocean_mosaic.nc:
   hashes:
     binhash: d6a322921d55b3f2c513b41140419110
     md5: 36e956159508785d9201cc13aec0cf02
+work/ocean/INPUT/ocean_temp_salt.res.nc:
+  fullpath: /g/data/ik11/inputs/access-om2/input_20200530/mom_025deg/ocean_temp_salt.res.nc
+  hashes:
+    binhash: da6d8d4a2f617e85d3ab60fa21bbe458
+    md5: 65c1c060388046d1f725d86374002bfd
 work/ocean/INPUT/ocean_vgrid.nc:
   fullpath: /g/data/ik11/inputs/access-om2/input_20200530/mom_025deg/ocean_vgrid.nc
   hashes:

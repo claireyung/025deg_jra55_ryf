@@ -18,6 +18,8 @@ ACCESS-OM2-025
 "ocean_scalar",     1,  "months", 1, "days", "time",
 "ocean_heat",       1,  "months", 1, "days", "time",
 "ocean_heat_daily",       1,  "days", 1, "days", "time",
+"ocean_hourly",     1,  "hours", 1, "hours", "time",
+"ocean_heat_hourly",1,  "hours", 1, "hours", "time",
 
 # Save ocean grid data once and for all
 "ocean_model","geolon_t","geolon_t", "ocean_grid","all",.false.,"none",2
@@ -49,6 +51,13 @@ ACCESS-OM2-025
 "ocean_model","temp","temp",            "ocean_daily","all",.true.,"none",2
 "ocean_model","dzt","dzt",              "ocean_daily","all",.true.,"none",2
 "ocean_model","ty_trans","ty_trans",    "ocean_daily","all",.true.,"none",2
+
+"ocean_model","u","u",                  "ocean_hourly","all",.true.,"none",2
+"ocean_model","v","v",                  "ocean_hourly","all",.true.,"none",2
+"ocean_model","wt","wt",                "ocean_hourly","all",.true.,"none",2
+"ocean_model","temp","temp",            "ocean_hourly","all",.true.,"none",2
+"ocean_model","dzt","dzt",              "ocean_hourly","all",.true.,"none",2
+"ocean_model","ty_trans","ty_trans",    "ocean_hourly","all",.true.,"none",2
 
 # Temperature-binned transports
 "ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_wmass","all",.true.,"none",1
@@ -114,6 +123,19 @@ ACCESS-OM2-025
 "ocean_model","temp_eta_smooth","temp_eta_smooth","ocean_heat_daily","all",.true.,"none",1
 "ocean_model","temp_rivermix","temp_rivermix","ocean_heat_daily","all",.true.,"none",1
 
+"ocean_model","temp_submeso","temp_submeso","ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","temp_tendency","temp_tendency","ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","temp_advection","temp_advection","ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","temp_vdiffuse_diff_cbt","temp_vdiffuse_diff_cbt", "ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","temp_nonlocal_KPP","temp_nonlocal_KPP", "ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","sw_heat","sw_heat", "ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","temp_vdiffuse_sbc","temp_vdiffuse_sbc","ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","sfc_hflux_pme","sfc_hflux_pme","ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","frazil_3d","frazil_3d","ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","temp_eta_smooth","temp_eta_smooth","ocean_heat_hourly","all",.true.,"none",1
+"ocean_model","temp_rivermix","temp_rivermix","ocean_heat_hourly","all",.true.,"none",1
+
+
 # # 2d fields - monthly output
 "ocean_model","eta_t","eta_t",                     "ocean_month","all",.true.,"none",2
 "ocean_model","mld","mld",                         "ocean_month","all",.true.,"none",2
@@ -130,6 +152,10 @@ ACCESS-OM2-025
 
 "ocean_model","net_sfc_heating","net_sfc_heating", "ocean_daily","all",.true.,"none",2
 "ocean_model","frazil_3d_int_z","frazil_3d_int_z", "ocean_daily","all",.true.,"none",2
+
+"ocean_model","net_sfc_heating","net_sfc_heating", "ocean_hourly","all",.true.,"none",2
+"ocean_model","frazil_3d_int_z","frazil_3d_int_z", "ocean_hourly","all",.true.,"none",2
+"ocean_model","mld","mld",                         "ocean_hourly","all",.true.,"none",2
 
 
 # timeseries - 1D scalar variables
