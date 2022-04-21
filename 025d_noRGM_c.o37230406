@@ -1,0 +1,19 @@
+laboratory path:  /scratch/e14/cy8964/access-om2
+binary path:  /scratch/e14/cy8964/access-om2/bin
+input path:  /scratch/e14/cy8964/access-om2/input
+work path:  /scratch/e14/cy8964/access-om2/work
+archive path:  /scratch/e14/cy8964/access-om2/archive
+{'archive/output095/ocean': ['ocean_heat_daily.nc.0000', 'ocean_heat_daily.nc.0001', 'ocean_heat_daily.nc.0002', 'ocean_heat_daily.nc.0003', 'ocean_heat_daily.nc.0004', 'ocean_heat_daily.nc.0005', 'ocean_heat_daily.nc.0006', 'ocean_heat_daily.nc.0007', 'ocean_heat_daily.nc.0008', 'ocean_heat_daily.nc.0009', 'ocean_heat_daily.nc.0010', 'ocean_heat_daily.nc.0011', 'ocean_heat_daily.nc.0012', 'ocean_heat_daily.nc.0013', 'ocean_heat_daily.nc.0014', 'ocean_heat_daily.nc.0015', 'ocean_heat_daily.nc.0016', 'ocean_heat_daily.nc.0017', 'ocean_heat_daily.nc.0018', 'ocean_heat_daily.nc.0019', 'ocean_heat_daily.nc.0020', 'ocean_heat_daily.nc.0021', 'ocean_heat_daily.nc.0022', 'ocean_heat_daily.nc.0023', 'ocean_heat_daily.nc.0024', 'ocean_heat_daily.nc.0025', 'ocean_heat_daily.nc.0026', 'ocean_heat_daily.nc.0027', 'ocean_heat_daily.nc.0028', 'ocean_heat_daily.nc.0029']}
+
+======================================================================================
+                  Resource Usage on 2022-03-25 23:16:14:
+   Job Id:             37230406.gadi-pbs
+   Project:            e14
+   Exit Status:        271 (Linux Signal 15 SIGTERM Termination)
+   Service Units:      1152.93
+   NCPUs Requested:    16                     NCPUs Used: 16              
+                                           CPU Time Used: 08:20:26                                   
+   Memory Requested:   192.0GB               Memory Used: 99.97GB         
+   Walltime requested: 12:00:00            Walltime Used: 12:00:35        
+   JobFS requested:    100.0MB                JobFS used: 0B              
+======================================================================================
