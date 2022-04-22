@@ -10,7 +10,7 @@
 # Set this directory to something in /g/data3/hh5/tmp/cosima/
 # Make a unique path for your set of runs.
 # DOUBLE-CHECK IT IS UNIQUE SO YOU DON'T OVERWRITE EXISTING OUTPUT!
-GDATADIR=/g/data/e14/rmh561/access-om2/archive/025deg_jra55_ryf_norediGM/
+#GDATADIR=/g/data/e14/rmh561/access-om2/archive/025deg_jra55_ryf_norediGM/
 
 mkdir -p ${GDATADIR}
 cd archive
