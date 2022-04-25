@@ -37,7 +37,7 @@ submodels:
 
 # Collation
 collate:
-  walltime: 12:00:00
+  walltime: 24:00:00
   mem: 192GB
   ncpus: 16
   queue: normal
