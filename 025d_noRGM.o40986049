@@ -1,0 +1,58 @@
+laboratory path:  /scratch/e14/cy8964/access-om2
+binary path:  /scratch/e14/cy8964/access-om2/bin
+input path:  /scratch/e14/cy8964/access-om2/input
+work path:  /scratch/e14/cy8964/access-om2/work
+archive path:  /scratch/e14/cy8964/access-om2/archive
+nruns: 1 nruns_per_submit: 1 subrun: 1
+Loading input manifest: manifests/input.yaml
+Loading restart manifest: manifests/restart.yaml
+Loading exe manifest: manifests/exe.yaml
+Setting up atmosphere
+Setting up ocean
+Setting up ice
+Setting up access-om2
+Checking exe and input manifests
+Updating full hashes for 3 files in manifests/exe.yaml
+Creating restart manifest
+Updating full hashes for 343 files in manifests/restart.yaml
+40994785.gadi-pbs
+Loading input manifest: manifests/input.yaml
+Loading restart manifest: manifests/restart.yaml
+Loading exe manifest: manifests/exe.yaml
+payu: Found modules in /opt/Modules/v4.3.0
+qsub -q normal -P e14 -l walltime=86400 -l ncpus=16 -l mem=192GB -N 025d_noRGM_c -l wd -j n -v PAYU_PATH=/g/data3/hh5/public/apps/miniconda3/envs/analysis3-22.01/bin,PAYU_CURRENT_RUN=105,MODULESHOME=/opt/Modules/v4.3.0,MODULES_CMD=/opt/Modules/v4.3.0/libexec/modulecmd.tcl,MODULEPATH=/g/data3/hh5/public/modules:/etc/scl/modulefiles:/opt/Modules/modulefiles:/opt/Modules/v4.3.0/modulefiles:/apps/Modules/modulefiles -W umask=027 -l storage=gdata/e14+gdata/hh5+gdata/ik11+gdata/ua8+scratch/e14 -- /g/data/hh5/public/apps/miniconda3/envs/analysis3-22.01/bin/python3.9 /g/data3/hh5/public/apps/miniconda3/envs/analysis3-22.01/bin/payu-collate
+Writing manifests/restart.yaml
+Writing manifests/exe.yaml
+payu: Found modules in /opt/Modules/v4.3.0
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/config.yaml
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/atmosphere/atm.nml
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/atmosphere/forcing.json
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/ocean/data_table
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/ocean/diag_table
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/ocean/field_table
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/ocean/input.nml
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/ice/cice_in.nml
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/ice/input_ice.nml
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/ice/input_ice_gfdl.nml
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/ice/input_ice_monin.nml
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/ice/input_ice.nml
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/accessom2.nml
+git add /home/156/cy8964/access-om2/025deg_jra55_ryf/namcouple
+git add manifests/input.yaml
+git add manifests/restart.yaml
+git add manifests/exe.yaml
+git commit -am "2022-05-23 10:36:58: Run 105"
+mpirun --mca orte_base_help_aggregate 0 -wdir /scratch/e14/cy8964/access-om2/work/025deg_jra55_ryf/atmosphere -np 1  /scratch/e14/cy8964/access-om2/work/025deg_jra55_ryf/atmosphere/yatm_1bb8904.exe : -wdir /scratch/e14/cy8964/access-om2/work/025deg_jra55_ryf/ocean -np 1455  /scratch/e14/cy8964/access-om2/work/025deg_jra55_ryf/ocean/fms_ACCESS-OM_5846c21_libaccessom2_1bb8904.x : -wdir /scratch/e14/cy8964/access-om2/work/025deg_jra55_ryf/ice -np 361  /scratch/e14/cy8964/access-om2/work/025deg_jra55_ryf/ice/cice_auscom_1440x1080_480p_d3e8bdf_libaccessom2_1bb8904.exe
+
+======================================================================================
+                  Resource Usage on 2022-05-23 12:31:51:
+   Job Id:             40986049.gadi-pbs
+   Project:            e14
+   Exit Status:        0
+   Service Units:      6998.08
+   NCPUs Requested:    1824                   NCPUs Used: 1824            
+                                           CPU Time Used: 3442:43:56                                 
+   Memory Requested:   7.12TB                Memory Used: 1.26TB          
+   Walltime requested: 02:30:00            Walltime Used: 01:55:06        
+   JobFS requested:    3.71GB                 JobFS used: 8.19MB          
+======================================================================================
